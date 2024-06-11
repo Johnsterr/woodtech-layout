@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --main-accent-color: #f88500;
+    --main-text-color: #333333;
+    --main-dark-color: #202328;
+    --main-deep-color: #171a1a;
+    --main-dark-header-color: #6f7a8b;
+    --main-dark-div-color: #2d3038;
+    --main-light-bg-color: #fafafa;
+    --main-light-disabled-color: #e4e6e8;
+    --main-light-div-color: #e7e7e8;
+    --main-middle-gray-color: rgba(111, 122, 139, 0.75);
+    --main-text-light-color: #999999;
+    --main-text-size: 14px;
+}
+
+.header__bottom-line {
+    margin: 0 auto;
+    width: 92.5%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
