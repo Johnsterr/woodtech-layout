@@ -11,7 +11,10 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./styles/normalize.css" />
+        <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
         <link rel="stylesheet" href="./styles/base.css" />
+        <script src="./swiper/swiper-bundle.min.js" defer></script>
+        <script src="./js/script.js" defer></script>
     </head>
     <body>
         <div class="header container">
@@ -58,7 +61,35 @@
         </div>
         <section class="hero">
             <div class="container">
-                <div class="hero__container"></div>
+                <div class="hero__container">
+                    <div class="swiper hero__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide hero__slide">
+                                <div class="hero__slide-wrapper">
+                                    <img class="hero__slide-img" src="./img/slider-img.jpg" alt="slide_1" />
+                                    <div class="hero__slide-img-cover"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hero__slide">
+                                <div class="hero__slide-wrapper">
+                                    <img class="hero__slide-img" src="./img/slider-img.jpg" alt="slide_2" />
+                                    <div class="hero__slide-img-cover"></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide hero__slide">
+                                <div class="hero__slide-wrapper">
+                                    <img class="hero__slide-img" src="./img/slider-img.jpg" alt="slide_3" />
+                                    <div class="hero__slide-img-cover"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__slider-control">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </body>

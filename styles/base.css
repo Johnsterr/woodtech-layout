@@ -60,6 +60,7 @@ html {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 2;
 }
 
 .header__container {
@@ -126,10 +127,52 @@ html {
 }
 
 .hero {
-    height: 80vh;
+    /* height: 650px; */
     background-color: var(--main-dark-color);
 }
 
 .hero__container {
     padding: 10px;
+    height: 650px;
+}
+
+.hero__slider {
+    height: 100%;
+}
+
+.hero__slide {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hero__slide-wrapper {
+    position: relative;
+}
+
+.hero__slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(150%);
+}
+
+.hero__slide-img-cover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.15;
+    background-color: var(--main-dark-color);
+}
+
+.hero__slider-control {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 440px;
+    height: 90px;
+    background-color: var(--main-dark-color);
+    border-top-left-radius: 10px;
+    z-index: 1;
 }
