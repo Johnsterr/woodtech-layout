@@ -34,6 +34,27 @@ html {
     max-width: 1280px;
 }
 
+.btn {
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #ffffff;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: var(--main-accent-color);
+    transition: all 0.25s ease-in;
+}
+
+.btn:hover {
+    background-color: #ffa136;
+    cursor: pointer;
+}
+
+.btn--uppecase {
+    text-transform: uppercase;
+}
+
 .logo {
     position: relative;
     padding-left: 22px;
@@ -249,4 +270,78 @@ html {
 .slider-control__item > .swiper-button-disabled {
     color: #59606c;
     opacity: 1;
+}
+
+.trust {
+    background-color: var(--main-deep-color);
+}
+
+.trust__container {
+    padding: 45px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.trust-title {
+    margin-bottom: 31px;
+    position: relative;
+    font-size: 15px;
+    font-weight: 900;
+    color: var(--main-dark-header-color);
+    text-transform: uppercase;
+}
+
+.trust-title::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    width: 220px;
+    height: 1px;
+    background-color: var(--main-dark-div-color);
+}
+
+.trust-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 20px;
+    color: var(--main-dark-header-color);
+}
+
+.trust-list__item {
+    margin-right: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    list-style: none;
+}
+
+.trust-list__item > span {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+}
+
+.trust-right {
+    max-width: 360px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 10px;
+}
+
+.trust-right__info {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--main-dark-header-color);
+    text-align: end;
+}
+
+.trust-right__phone {
+    font-family: var(--secondary-font-family);
+    font-size: 28px;
+    line-height: 1.65;
+    font-weight: 300;
+    color: var(--main-light-bg-color);
+    text-align: end;
 }
