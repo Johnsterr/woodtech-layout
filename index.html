@@ -40,12 +40,27 @@
                     </p>
                 </div>
                 <nav class="header__menu">
-                    <a class="header__menu-link" href="#" target="_blank" rel="noopener noreferrer">Главная</a>
-                    <a class="header__menu-link" href="#" target="_blank" rel="noopener noreferrer">Проекты</a>
-                    <a class="header__menu-link" href="#" target="_blank" rel="noopener noreferrer">Услуги</a>
-                    <a class="header__menu-link" href="#" target="_blank" rel="noopener noreferrer">Блог</a>
-                    <a class="header__menu-link" href="#" target="_blank" rel="noopener noreferrer">Компания</a>
+                    <a class="header__menu-link" href="#" rel="noopener noreferrer">Главная</a>
+                    <a class="header__menu-link" href="#" rel="noopener noreferrer">Проекты</a>
+                    <a class="header__menu-link" href="#" rel="noopener noreferrer">Услуги</a>
+                    <a class="header__menu-link" href="#" rel="noopener noreferrer">Блог</a>
+                    <a class="header__menu-link" href="#" rel="noopener noreferrer">Компания</a>
                 </nav>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                        />
+                    </svg>
+                </button>
                 <div class="header__social">
                     <a class="header__social-link" href="#" target="_blank" rel="noopener noreferrer">
                         <img src="./icons/instagram.svg" alt="inst" />
@@ -495,5 +510,25 @@
                 </svg>
             </i>
         </button>
+        <div class="mobile-menu" id="mobile-menu">
+            <button class="mobile-menu__btn" id="mobile-menu-close-btn">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                >
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div class="mobile-menu__links">
+                <a class="mobile__menu-link" href="#" rel="noopener noreferrer">Главная</a>
+                <a class="mobile__menu-link" href="#" rel="noopener noreferrer">Проекты</a>
+                <a class="mobile__menu-link" href="#" rel="noopener noreferrer">Услуги</a>
+                <a class="mobile__menu-link" href="#" rel="noopener noreferrer">Блог</a>
+                <a class="mobile__menu-link" href="#" rel="noopener noreferrer">Компания</a>
+            </div>
+        </div>
     </body>
 </html>
